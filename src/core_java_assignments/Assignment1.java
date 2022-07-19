@@ -10,6 +10,17 @@ public class Assignment1 {
 		int row = 6;
 		int col = 3;
 		rectangle(row, col);
+		System.out.println();
+		System.out.println("Pattern 3: ");
+		rightLowerTriangle(num);
+	}
+	public static void rightLowerTriangle(int num) {
+		for(int i = 0; i < num; i++) {
+			for(int j = 0; j < num-i; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 	}
 	public static void rectangle(int row, int col) {
 		for(int i = 1; i <= row; i++) {
@@ -27,4 +38,5 @@ public class Assignment1 {
 			System.out.println();
 		}
 	}
+	
 }
